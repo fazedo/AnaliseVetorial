@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="582px" height="152px" viewBox="0 0 582 152" enable-background="new 0 0 582 152" xml:space="preserve">
+<defs>
+</defs>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="3" d="M6,78
+	c3.413-6.233,26.26-25.972,32.274-31.948c10.957-10.889,21.623-19.584,35.674-27.303c27.38-15.04,64.029-15.293,92.275-5.994
+	c66.516,21.897,99.819,92.027,161.936,121.399C349.845,144.408,375.574,152.303,399,145c76.935-23.982,126.591-83.318,180-141"/>
+<polyline fill="none" stroke="#000000" stroke-width="3" points="579,4 377,147 256,79 129,8 5,78 "/>
+<circle cx="5" cy="78" r="5"/>
+<circle cx="129" cy="8" r="5"/>
+<circle cx="256" cy="79" r="5"/>
+<circle cx="377" cy="147" r="5"/>
+<circle cx="577" cy="5" r="5"/>
+</svg>

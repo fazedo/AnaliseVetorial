@@ -1,0 +1,41 @@
+\documentclass[Main.tex]{subfiles}
+\begin{document}
+
+%\part{aa}
+
+\chapter{Diferenciação de campos}
+
+\section{A derivada direcional e o gradiente}
+O conceito de derivada é uma formalização da idéia de taxa de variação. Quando estamos diante de um campo escalar como a distribuição de temperaturas em um sala, podemos nos pergutar como varia a temperatura quando nos deslocamos na sala em uma dada direção. Ou ainda, se uma abelha se desloca com uma dada trajetória dentro desta sala, qual é a derivada da temperatura experimentada pela abelha?
+
+Para responder a estas perguntas, vamos partir das idéias mais fundamentais do Cálculo Diferencial. Então seja um ponto $(x,y,z)$ no espaço tridimensional e $f(x,y,z)$ um campo escalar. A taxa de variação do valor de $f$ na direção do vetor unitário $\hat{u}=(u_1,u_2,u_3)$ é denotada 
+$\frac{\partial f}{\partial \hat{u}}$ e é dada pelo limite de $h$ para zero do quociente entre a variação do valor de $f$ na direção $h$, ou seja, $f(x+hu_1,y+hu_2,z+hu_3)-f(x,y,z)$ e $h$:
+\begin{equation}
+ \frac{\partial f}{\partial \hat{u}}=\lim_{h\to 0} \frac{f(x+hu_1,y+hu_2,z+hu_3)-f(x,y,z)}{h}
+\end{equation}
+Observe que este é um limite do tipo $\frac{0}{0}$ e, supondo diferenciabilidade de $f$, podemos aplicar a regra de De L'Hôpital:
+\begin{equation}\label{eqderivadaaux}
+ \frac{\partial f}{\partial \hat{u}}= \lim_{h\to 0} \frac{\frac{d}{dh}\left[f(x+hu_1,y+hu_2,z+hu_3)-f(x,y,z)\right]}{\frac{d}{dh}h}=\left.\frac{d}{dh}f(x+hu_1,y+hu_2,z+hu_3)\right|_{h=0}
+\end{equation}
+Aplicamos, agora a regra da cadeia na derivada obtida:
+\begin{equation}\begin{array}{lcl}
+ \frac{d}{dh}f(x+hu_1,y+hu_2,z+hu_3)&=& 
+ \frac{\partial}{\partial x}f(x+hu_1,y+hu_2,z+hu_3)u_1\\[4pt]
+ &+&\frac{\partial}{\partial y}f(x+hu_1,y+hu_2,z+hu_3)u_2\\[4pt]
+ &+&\frac{\partial}{\partial z}f(x+hu_1,y+hu_2,z+hu_3)u_3.
+\end{array}\end{equation}
+Substituindo em (\ref{eqderivadaaux}), temos:
+\begin{equation}\label{eqderivada}
+ \frac{\partial f}{\partial \hat{u}}=\frac{\partial}{\partial x}f(x,y,z)u_1+\frac{\partial}{\partial y}f(x,y,z)u_2+\frac{\partial}{\partial z}f(x,y,z)u_3.
+\end{equation}
+Esta é a expressão para a derivada direcional. Observamos agora que esta expressão pode ser reinterpretada como o produto interno entre o vetorformado pelas derivadas parciais de $f$ e o vetor direção $\hat{u}$:
+\begin{equation}\label{eqderivadagrad}
+ \frac{\partial f}{\partial \hat{u}}=\underbrace{\left(\frac{\partial}{\partial x}f(x,y,z)\vct{i}+\frac{\partial}{\partial y}f(x,y,z)\vct{j}+\frac{\partial}{\partial z}f(x,y,z)\vct{k}\right)}_{\nablavec f}\cdot \underbrace{\left(u_1\vct{i}+u_2\vct{j}+u_3\vct{k}\right)}_{\hat{u}}
+\end{equation}
+
+\section{O operador $\nablavec$}
+\section{O divergente}
+\section{O rotacional}
+ 
+
+\end{document}

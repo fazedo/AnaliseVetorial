@@ -1,0 +1,111 @@
+\documentclass{book}
+
+\usepackage{bigints}
+\usepackage{caption}
+ \usepackage{tabu}
+\usepackage{ccicons}
+\usepackage{subfiles}
+\usepackage[latin1]{inputenc}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+%\usepackage[a5paper]{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage[portuges]{babel}
+\usepackage{amsthm}
+%\usepackage{graphics}
+\usepackage[normalem]{ulem}
+\usepackage{pstricks,pst-plot}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{pst-math}
+\usepackage{pst-plot}
+\usepackage{pst-3dplot}
+
+\usepackage{pst-solides3d}
+\usepackage{wrapfig,float}
+%\usepackage{hyperref}
+\usepackage{pstricks,pst-plot}
+
+\usepackage{pst-circ}
+
+
+%\usepackage[answerdelayed,lastexercise]{exercise}
+\usepackage[lastexercise]{exercise}
+
+\renewcommand{\ExerciseHeaderTitle}{({\it \ExerciseTitle})}
+\renewcommand{\ExerciseHeader}{{\textbf{\large\ExerciseName~\ExerciseHeaderNB\ExerciseHeaderTitle\ExerciseHeaderOrigin\medskip}}}
+
+\renewcommand{\AnswerHeader}{\medskip{\textbf{Resposta do exercício \ExerciseHeaderNB}\smallskip}:~}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{lem}{Lema}
+\newtheorem{prop}{Proposi\c{c}{\~a}o}
+\newtheorem{propr}{Propriedade}
+\newtheorem{corol}{Corolario}	
+\newtheorem{ex}{Exemplo}	
+\newtheorem{prob}{Problema}
+\newtheorem{obs}{Observa\c{c}{\~a}o}
+\newtheorem{defn}{Defini\c{c}{\~a}o}
+
+\newcommand{\vct}[1]{\vec{#1}}
+\renewcommand{\sin}{\operatorname{sen}}
+\renewcommand{\sinh}{\operatorname{senh}}
+
+\newcommand{\nablavec}{\vec{\nabla}}
+
+\title{Cálculo Vetorial}
+\author{Fábio Azevedo, Esequia Sauter}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\chapter*{Licença}
+Este material está licenciado por seus autores sob a licença Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) %ver \url{https://creativecommons.org/licenses/by-sa/3.0/deed.pt}.
+
+%\ccbysa 3.0
+
+
+
+
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+
+\subfile{algvet.tex}
+\subfile{curvas.tex}
+\subfile{superficies}
+%\subfile{Campos_escalares_vetoriais}
+\subfile{diferenciacao_de_campos}
+
+\chapter{Integração de campos}
+\section{Integrais de linha}
+\section{Campos conservativos}
+\section{Teorema fundamental das Integrais de linha}
+\section{Integrais de superfície}
+\section{Teorema da Divergência de Gauss}
+\section{Teorema de Stokes}
+\section{Formulação intínseca dos operadores diferenciais}
+
+%\chapter{Derivação de campos}
+%\section{Gradiente}
+%\section{Divergente}
+%\subsection{Caso particular do Teorema da Divergência}
+%Provar que
+%$$\hbox{div}{\bf{F}}(x,y,z)=\lim_{r\to 0} \int_{}\bf{F}\cdot \bf{dS}$$ 
+%\section{Rotacional}
+%\section{Teorema da divergência}
+%\section{Teorema de Stokes}
+
+
+
+\bibliographystyle{acm}
+\bibliography{bib}
+
+
+\end{document} 
