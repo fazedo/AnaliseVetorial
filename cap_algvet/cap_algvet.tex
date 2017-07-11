@@ -1,6 +1,6 @@
-\documentclass[Main.tex]{subfiles}
-\begin{document}
-\setcounter{chapter}{-1}
+%\documentclass[Main.tex]{subfiles}
+%\begin{document}
+%\setcounter{chapter}{-1}
 \chapter{Álgebra vetorial}
 O objetivo deste capítulo é revisar conceitos básicos do cálculo e da álgebra linear necessários ao entendimento do cálculo vetorial.    
 
@@ -59,7 +59,7 @@ Nossa principal preocupação neste curso é com o espaço euclidiano de três dimens
 
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
-    \includegraphics[width=0.48\textwidth]{regra_mao}
+    \includegraphics[width=0.48\textwidth]{./cap_algvet/pics/regra_mao}
   \end{center}
   \caption{À esquerda, um sistema levogiro (regra da mão esquerda). À direita, um sistema dextrogiro (regra da mão direita).}
 \end{wrapfigure}
@@ -111,7 +111,7 @@ Definimos também a norma euclidiana\index{norma} de um vetor $\vct{v}$ como a di
 \begin{wrapfigure}{r}{0.3\textwidth}
   \begin{center}
   \vspace{-20pt}
-    \includegraphics[width=0.26\textwidth]{tri_ine2}
+    \includegraphics[width=0.26\textwidth]{./cap_algvet/pics/tri_ine2}
   \end{center}
   \vspace{-20pt}
   \caption{Representação gráfica da desigualdade triangular.}
@@ -229,7 +229,7 @@ Localidade &	  x & y & z\\
 
 \begin{figure}[h!]
   \begin{center}
-    \includegraphics[width=0.4\textwidth]{latlong}
+    \includegraphics[width=0.4\textwidth]{./cap_algvet/pics/latlong}
   \end{center}
   \caption{Representação gráfica do sistema de coordenadas geográficas.}
 \label{latlong}
@@ -291,7 +291,7 @@ Na seção anterior, começamos a trabalhar com vetores no espaço euclidiano. No en
 \begin{wrapfigure}{r}{0.4\textwidth}
   \begin{center}
   \vspace{-20pt}
-    \includegraphics[width=0.46\textwidth]{cossenos}
+    \includegraphics[width=0.46\textwidth]{./cap_algvet/pics/cossenos}
   \end{center}
   %\vspace{-20pt}
   \caption{Lei dos cossenos: $\overline{BC}^2=\overline{AB}^2+\overline{AC}^2-2~\!\overline{AB}~\!\overline{AC}\cos\theta$}\label{leicossenos}
@@ -487,7 +487,7 @@ u_3 & v_3 &  \left(u_1v_2-u_2v_1\right)
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
   \vspace{-20pt}
-    \includegraphics[width=0.46\textwidth]{R_mao_dir}
+    \includegraphics[width=0.46\textwidth]{./cap_algvet/pics/R_mao_dir}
   \end{center}
   %\vspace{-20pt}
   \caption{Regra da mão direita.}\label{Regra_da_mao_direita}
@@ -506,7 +506,7 @@ A norma do produto vetorial entre os vetores $\vct{u}$ e $\vct{v}$ pode ser inte
 \begin{figure}[h!]
   \begin{center}
  % \vspace{-20pt}
-    \includegraphics[width=0.5\textwidth]{prod_vec_mao_dir}
+    \includegraphics[width=0.5\textwidth]{./cap_algvet/pics/prod_vec_mao_dir}
   \end{center}
   %\vspace{-20pt}
   \caption{Interpretação geométrica do produto vetorial.}\label{prod_paralelo}
@@ -703,7 +703,7 @@ O formulário abaixo resume as indentidades que acabamos de demonstrar e lista ma
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
   \vspace{-20pt}
-    \includegraphics[width=0.46\textwidth]{coo_cil}
+    \includegraphics[width=0.46\textwidth]{./cap_algvet/pics/coo_cil}
   \end{center}
   %\vspace{-20pt}
   \caption{Representação de um ponto de coordenadas cilíndricas.}\label{Coo_cil}
@@ -749,9 +749,9 @@ Resp: $\sqrt{\rho^2+z^2}$
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
   \vspace{-20pt}
-    \includegraphics[width=0.46\textwidth]{3D_Spherical}
+    \includegraphics[width=0.46\textwidth]{./cap_algvet/pics/3D_Spherical}
   \end{center}
-  \caption{Representação de um ponto de coordenadas esféricas.}\label{coo_esf}
+  \caption{Representação de um ponto de coordenadas esféricas.}\label{./cap_algvet/pics/coo_esf}
   \vspace{-20pt}
 \end{wrapfigure}
 No sistema de coordenadas cilíndricas, um ponto $P$ é representado pelas coordenadas\index{Sistema de coordenadas esféricas} $r$, $\phi$ e $\theta$. A coordenada $r$ indica a distância do ponto $P$ até a origem, sendo consistente com a definição de módulo de um vetor. A coordenada $\phi$ é o mesmo ângulo do sistema de coordenadas cilíndricas, ou seja,  é o ângulo entre o semi-eixo $x>0$ e o ponto Q (projeção de P no plano xy). O ângulo $\theta$ é o ângulo entre a reta que liga a origem até o ponto $P$ e o semi-eixo $z>0$.  Ver figura \ref{coo_esf}. A relação entre a coordenadas no sistema de coordenadas esféricas e no sistema de coordenadas cilíndricas é dada pelas projeções:
@@ -842,4 +842,4 @@ $$\|f\|_2=\left(\left<f,f\right>\right)^{1/2}=\left(\int_0^1f(x)^2dx\right)^{1/2
 que é o caso particular de (\ref{norma_lp}) quando $p=2$. 
  A desigualdade de Cauchy-Schwarz admite a seguinte forma:
 $$\int_0^1f(x)g(x)dx \leq \left(\int_0^1f(x)^2dx\right)^{1/2} \left(\int_0^1g(x)^2dx\right)^{1/2}$$
-\end{document}
+%\end{document}
